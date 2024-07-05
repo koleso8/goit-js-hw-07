@@ -1,0 +1,39 @@
+.categories-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+}
+.item {
+    background-color:  #f6f6fe;
+    padding: 16px;
+    color: #2e2f42;
+    border-radius: 8px;
+    width: 392px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.04em;
+}
+.categories-title {
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-bottom: 16px;
+    
+}
+.categories-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.categories-item-list > li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px 16px;
+}
+
+

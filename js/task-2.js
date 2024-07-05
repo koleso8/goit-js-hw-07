@@ -24,3 +24,53 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+/* 
+function carTemplate(car) {
+  return `<li class="car-item">
+    <h4>${car.make} ${car.model}</h4>
+    <p>Year: ${car.year}</p>
+    <p>Price: ${car.price}$</p>
+    <div>
+    <p>transmission: ${car.transmission}</p>
+    <p style="background-color: ${car.color};">color: ${car.color}</p>
+    </div>
+  </li>`;
+}
+
+function carsTemplate(arr) {
+  return arr.map(carTemplate).join('');
+}
+
+function renderCars() {
+  const sortedCars = cars.toSorted((a, b) => {
+    return a.price - b.price;
+  });
+  const markup = carsTemplate(sortedCars);
+  ulElem.insertAdjacentHTML('beforeend', markup);
+}
+
+*/
+
+
+const ulElem = document.querySelector('.gallery')
+console.log("🚀 ~ ulElem:", ulElem)
+
+function imgTemplate(img) {
+  return `<li class="gallery-item">
+          <img src="${img.url}" alt="${img.alt}" width="360" height="300">
+          </li>`
+}
+
+function imagesTemplate(array) {
+  return array.map(imgTemplate).join('');
+  
+}
+
+function renderImages() {
+  const markup = imagesTemplate(images)
+  console.log("🚀 ~ renderImages ~ markup:",typeof markup)
+  ulElem.insertAdjacentHTML('beforeend', markup)
+  
+}
+renderImages()
