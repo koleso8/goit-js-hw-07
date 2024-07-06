@@ -3,31 +3,6 @@ function getRandomHexColor() {
     .toString(16)
     .padStart(6, 0)}`;
 }
-/*
-
-
-const divElem = document.querySelector('#boxes')
-const countEl = document.querySelector('#controls')
-
-const value = countEl.elements.;
-
-console.log(value);
-
-function createBox() {
-  return `<div class="box"></div>`
-}
-
-function boxesTemplate(array) {
-  return array.forEach(el => {}).join('');
-  
-}
-
-function renderBoxes() {
-  const markup = boxesTemplate(box)
-  divElem.insertAdjacentHTML('beforeend', markup)
-  
-}
-*/
 
 const input = document.querySelector('input');
 const createButton = document.querySelector('[data-create]');
